@@ -92,6 +92,10 @@ video {
   flex-wrap: wrap;
 }
 
+#showChat {
+  display: none;
+}
+
 .header_back {
   display: none;
   position: absolute;
@@ -102,7 +106,7 @@ video {
 }
 
 @media (max-width: 700px) {
-  .main {
+  .main_left {
     width: 100%;
     flex: 1;
   }
@@ -110,5 +114,9 @@ video {
   video {
     height: auto;
     width: 100%;
+  }
+
+  #showChat {
+    display: flex;
   }
 }
