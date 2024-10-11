@@ -3,29 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Video Calling App</title>
-
+    <title>videoChatApp</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="socket.io/socket.io.js"></script>
-
-    <!-- import font awesome here -->
-    <script
-      src="https://kit.fontawesome.com/812ea8c1f9.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- import peer.js -->
-    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.0.2/dist/peerjs.min.js"></script>
-
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script>
-      const ROOM_ID = "<%= roomId %>";
+        const ROOM_ID = "<%= roomId %>";
     </script>
   </head>
   <body>
     <div class="header">
       <div class="logo">
-        <div class="header_back"><i class="fas fa-angle-left"></i></div>
-        <h3>Video Calling</h2>
+        <div class="header_back">
+          <i class="fas fa-angle-left"></i>
+        </div>
+        <h3>Video Chat</h2>
       </div>
     </div>  
     <div class="main">  
@@ -50,12 +43,11 @@
           <div id="inviteButton" class="options_button">
             <i class="fas fa-user-plus"></i>
           </div>
+          
         </div>
       </div>
-    </div>
-
+    
   </div>
   </body>
-
   <script src="script.js"></script>
 </html>
