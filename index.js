@@ -17,7 +17,7 @@ const peerServer = ExpressPeerServer(server, {
 app.use("/peerjs", peerServer);
 
 app.get("/", (req, res) => {
-  // res.send("Hello World")
+  res.send("Hello World");
   res.redirect(`/${uuidv4()}`);
 });
 
@@ -40,3 +40,15 @@ io.on("connection", (socket) => {
 });
 
 server.listen(process.env.PORT || 3000);
+
+// const http = require("http");
+
+// const server = http.createServer((req, res) => {
+//   res.statusCode = 200;
+//   res.setHeader("Content-Type", "text/plain");
+//   res.end("Hello World\n");
+// });
+
+// server.listen(3000, () => {
+//   console.log("Server running at http://localhost:3000/");
+// });
